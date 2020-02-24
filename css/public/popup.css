@@ -1,0 +1,191 @@
+/* 遮罩 */
+
+.popup-shade {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .15);
+    z-index: 1000;
+}
+
+/* Login 登录模块 */
+
+.popup-login {
+    display: none;
+    width: 700px;
+    height: 480px;
+    background: white;
+    position: absolute;
+    top: calc((100% - 480px) / 2);
+    left: calc((100% - 700px) / 2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    z-index: 1001;
+}
+
+.login-close {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    text-align: center;
+    color: #999;
+    font-size: 24px;
+    z-index: 2;
+}
+
+.login-close:hover {
+    color: var(--textColor);
+}
+
+.login-head {
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.login-head a {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.login-head a:nth-child(1) {
+    margin-right: 50px;
+}
+
+.login-head a:nth-child(2) {
+    margin-left: 50px;
+}
+
+.login-head a:hover {
+    color: var(--textColor);
+}
+
+.login-body {
+    height: 330px;
+}
+
+.login-body a:hover {
+    text-decoration: underline;
+}
+
+.body-left {
+    width: 62%;
+    height: 100%;
+    float: left;
+    border-right: 1px dashed #e3e3e3;
+}
+
+.body-left h2 {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    color: #333;
+    margin: 20px 0 20px;
+}
+
+.body-left p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.body-left p>a {
+    color: #2a97d7;
+}
+
+.body-left input {
+    display: block;
+    border: 1px solid #d7d7d7;
+    margin: 0 auto;
+    line-height: 40px;
+    width: 60%;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.body-left input:not([type=submit]) {
+    padding: 0 10px;
+}
+
+.body-left input:not([type=submit]):focus {
+    border: 1px solid #92d4fe;
+}
+
+.body-left input[type=submit] {
+    background-color: #6ad03f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.body-left ul {
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.body-left li {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+}
+
+.body-left li a {
+    font-size: 12px;
+    color: #666;
+}
+
+.body-right {
+    width: 37%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px 5px 0 30px;
+    font-size: 12px;
+    color: #666;
+}
+
+.body-right a {
+    color: #00baed;
+}
+
+.body-right p {
+    line-height: 35px;
+    border-top: 1px dashed #e2e2e2;
+}
+
+.body-right p input {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.body-right>div {
+    margin-top: 25px;
+    color: #555;
+}
+
+.login-foot {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.foot-download {
+    display: inline-block;
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #31c27c;
+    background-image: linear-gradient(to right, #24ccaa, #31c27c);
+}

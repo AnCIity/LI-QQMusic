@@ -1,0 +1,335 @@
+/* index-public */
+
+.mod-index {
+    position: relative;
+}
+
+/* index-结构 */
+
+.index-head {
+    text-align: center;
+    padding: 40px 0 24px 0;
+}
+
+.index-head-title {
+    letter-spacing: 10px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #333333;
+}
+
+.index-nav {
+    height: 50px;
+    text-align: center;
+}
+
+.index-nav>a {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 24px;
+    color: #333;
+}
+
+.index-nav>a:hover {
+    color: var(--textColor);
+}
+
+.index-body {
+    margin-bottom: 20px;
+}
+
+.index-foot {
+    height: 38px;
+    text-align: center;
+}
+
+.index-foot a {
+    height: 38px;
+}
+
+.index-foot i:hover {
+    background-color: #afafaf;
+}
+
+/* ul图片五栏展示 */
+
+.side-imgShow-five li {
+    float: left;
+}
+
+.side-imgShow-five img {
+    width: 100%;
+    height: 100%;
+}
+
+.side-imgShow-five p:nth-child(2) {
+    margin: 15px 0 8px;
+}
+
+.side-imgShow-five p:not(:nth-child(2)) a {
+    color: #999;
+}
+
+.side-imgShow-five p a:hover {
+    color: var(--textColor);
+}
+
+.side-imgShow-five span {
+    color: #999;
+}
+
+/* 歌单推荐 */
+
+.mod-index-hot .side-imgShow-five li {
+    width: 19%;
+    margin: 0 .5%;
+}
+
+/* 新歌首发 */
+
+.mod-index-song .song-nav-button a {
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #c9c9c9;
+    padding: 0 23px;
+    margin-top: -10px;
+}
+
+.mod-index-song .song-nav-button a:hover {
+    background-color: #ededed;
+}
+
+.mod-index-song .index-body ul {
+    font-size: 0;
+}
+
+.mod-index-song .index-body li {
+    display: inline-block;
+    width: 33.333%;
+}
+
+.mod-index-song .index-body li:nth-child(-n+3) {
+    border-top: none;
+}
+
+.mod-index-song .song-body-item {
+    position: relative;
+    height: 86px;
+    overflow: hidden;
+    border-top: 1px solid #f2f2f2;
+    margin: -1px 30px 13px 0;
+    padding-top: 13px;
+    font-size: 14px;
+}
+
+.mod-index-song .song-body-item>a {
+    margin-right: 14px;
+    float: left;
+}
+
+.mod-index-song .index-body li a:hover {
+    color: var(--textColor);
+}
+
+.mod-index-song .song-body-content {
+    max-width: 45%;
+    float: left;
+    padding: 21px 0 2px;
+}
+
+.mod-index-song .song-body-content h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.mod-index-song .song-body-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    color: #999;
+    margin-top: 10px;
+}
+
+.mod-index-song .song-body-content p a {
+    color: #999;
+}
+
+.mod-index-song .song-body-time {
+    height: 86px;
+    line-height: 86px;
+    float: right;
+    color: #999;
+}
+
+/* 精彩推荐 */
+
+.mod-index-event ul {
+    display: flex;
+}
+
+.mod-index-event ul li {
+    margin: 0 10px;
+}
+
+.mod-index-event ul li img {
+    width: 100%;
+}
+
+/* 新碟首发 */
+
+.mod-index-album .side-imgShow-five li {
+    width: 18%;
+    margin: 0 1%;
+}
+
+.mod-index-album .side-imgShow-five li:nth-child(n+5) {
+    margin-bottom: 2%;
+}
+
+/* 排行榜 */
+
+.mod-index-top .top-head-a {
+    float: right;
+    position: relative;
+    top: -25px;
+    right: 30px;
+}
+
+.mod-index-top .top-head-a:hover {
+    color: var(--textColor);
+}
+
+.mod-index-top .list-title::before {
+    content: '巅峰榜';
+    display: block;
+    color: white;
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.mod-index-top .index-body ul {
+    padding-bottom: 20px;
+}
+
+.mod-index-top .index-body>ul>li {
+    float: left;
+    width: 18%;
+    margin: 0 1%;
+}
+
+.mod-index-top .top-body-list {
+    background: url("../../img/page/index/index_top-bg.jpg") no-repeat;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.mod-index-top .index-body li:nth-child(2) .top-body-list {
+    background-position: -224px 0;
+}
+
+.mod-index-top .index-body li:nth-child(3) .top-body-list {
+    background-position: -448px 0;
+}
+
+.mod-index-top .index-body li:nth-child(4) .top-body-list {
+    background-position: -672px 0;
+}
+
+.mod-index-top .index-body li:nth-child(5) .top-body-list {
+    background-position: -896px 0;
+}
+
+.mod-index-top .top-body-list h3 {
+    margin-top: 50px;
+}
+
+.mod-index-top .top-body-list h3 a {
+    height: 36px;
+    line-height: 1;
+    font-size: 26px;
+    color: white;
+    font-weight: 400;
+}
+
+.mod-index-top .top-body-list .list-play {
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    background: url("../../img/element/cover_play.png") no-repeat;
+    background-size: 72%;
+    margin: 20px 0 10px 15px;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.mod-index-top .top-body-list .list-play:hover {
+    opacity: 1;
+}
+
+.mod-index-top .top-body-list .list-play:hover+.list-chunk {
+    display: none;
+}
+
+.mod-index-top .top-body-list .list-chunk {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 152px;
+    margin-left: -18px;
+    width: 36px;
+    height: 2px;
+    background-color: white;
+}
+
+.mod-index-top .top-body-list ul {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.mod-index-top .top-body-list li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mod-index-top .top-body-list li>a {
+    color: white;
+}
+
+.mod-index-top .top-body-list li:first-child {
+    float: left;
+    margin-top: 5px;
+}
+
+.mod-index-top .top-body-list li:not(:first-child) {
+    width: 70%;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+/* MV */
+
+.mod-index-mv .side-imgShow-five li {
+    width: 18%;
+    margin: 0 1%;
+}
+
+.mod-index-mv .side-imgShow-five li:nth-child(n+5) {
+    margin-bottom: 2%;
+}
+
+.mod-index-mv .side-imgShow-five span {
+    display: block;
+    line-height: 22px;
+}

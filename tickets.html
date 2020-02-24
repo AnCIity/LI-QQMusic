@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>QQMusic | Ticket</title>
+	<!-- Icon -->
+	<link rel="icon" href="favicon.ico">
+	<!-- 字体图标库 -->
+	<link rel="stylesheet" href="css/public/iconfont.css">
+	<!-- 初始 CSS -->
+	<link rel="stylesheet" href="css/public/reset.css">
+	<!-- 公共 CSS -->
+	<link rel="stylesheet" href="css/public/common.css">
+	<!-- 布局 CSS -->
+	<link rel="stylesheet" href="css/public/layout.css">
+	<!-- 组件 CSS -->
+	<link rel="stylesheet" href="css/element/chunk.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/page/tickets.css">
+	<!-- Max-width:1200px CSS -->
+	<link rel="stylesheet" href="css/public/screen.css">
+	<!-- popup 弹出层 -->
+	<link rel="stylesheet" href="css/public/popup.css">
+</head>
+
+<body>
+
+	<!-- 顶部模块 -->
+	<div class="mod-header">
+		<div class="section-inner">
+
+			<div class="inner-top">
+				<h1 class="top-logo"><a href="#"><img src="img/public/logo.png" alt="QQ音乐"></a></h1>
+				<ul class="top-nav">
+					<li><a href="#">音乐馆</a></li>
+					<li><a href="#">我的音乐</a></li>
+					<li><a href="#">客户端</a></li>
+					<li><a href="#">开放平台</a></li>
+					<li><a href="#">VIP</a></li>
+				</ul>
+				<div class="top-search">
+					<input class="search-input" type="text" placeholder="搜索音乐、MV、歌单、用户">
+					<button class="search-input-btn"><i class="af af-sousuo"></i></button>
+				</div>
+				<div class="top-opt">
+					<a class="opt-login" onclick="showLogin()" href="#">登录</a>
+					<a class="opt-open-vip" href="#">开通绿钻豪华版</a>
+					<a class="opt-open-music" href="#">开通付费包</a>
+				</div>
+			</div>
+
+			<div class="inner-bottom">
+				<ul class="bottom-nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="singClassify.html">歌手</a></li>
+					<li><a href="#">新碟</a></li>
+					<li><a href="rankList.html">排行榜</a></li>
+					<li><a href="#">分类歌单</a></li>
+					<li><a href="#">电台</a></li>
+					<li><a href="#">MV</a></li>
+					<li><a href="#">数字专辑</a></li>
+					<li><a href="tickets.html">票务</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- 活动模块 -->
+	<div class="index-bg mod-slide mod-event">
+		<div class="section-inner">
+			<div class="event-show">
+				<ul class="event-show-list">
+					<li>
+						<img src="http://y.gtimg.cn/music/photo_new/T011R1080x432M000001RdBya2BOWtY.jpg?max_age=2592000"
+							alt="">
+					</li>
+					<li>
+						<img src="http://y.gtimg.cn/music/photo_new/T011R1080x432M000000AXelh0V0SPm.jpg?max_age=2592000"
+							alt="">
+					</li>
+					<li>
+						<img src="http://y.gtimg.cn/music/photo_new/T011R1080x432M000001osiHR0uNwyZ.jpg?max_age=2592000"
+							alt="">
+					</li>
+				</ul>
+			</div>
+			<div class="carousel-index">
+				<a href="#"><i class="side-switch-bg"></i></a>
+				<a href="#"><i class="side-switch-bg"></i></a>
+				<a href="#"><i class="side-switch-bg"></i></a>
+				<a href="#"><i class="side-switch-bg"></i></a>
+				<a href="#"><i class="side-switch-bg"></i></a>
+				<a href="#"><i class="side-switch-bg"></i></a>
+			</div>
+		</div>
+		<div class="music-slide">
+			<div class="slide-block left">
+				<a href="#" class="chunk chunk-left"><i class="af af-toleft"></i></a>
+			</div>
+			<div class="slide-block right">
+				<a href="#" class="chunk chunk-right"><i class="af af-toright"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 城市选择 -->
+	<div class="mod-city">
+		<div class="section-inner">
+			<div class="city-search">
+				<div>
+					<a href="#">北京 <i class="af af-tobottom"></i></a>
+				</div>
+				<input type="text" placeholder="搜索票务">
+				<button><i class="af af-sousuo"></i></button>
+				<a href="#">我的订单 <i class="af af-toright"></i></a>
+			</div>
+			<div class="city-tab-list">
+				<ul>
+					<li><a href="#"><i class="af af-ziyuan"></i>全部</a></li>
+					<li><a href="#"><i class="af af-huatong"></i>演唱会</a></li>
+					<li><a href="#"><i class="af af-huore-s"></i>LiveHouse</a></li>
+					<li><a href="#"><i class="af af-gangqin"></i>音乐会</a></li>
+					<li><a href="#"><i class="af af-qunzi"></i>舞蹈芭蕾</a></li>
+					<li><a href="#"><i class="af af-xiaolian1"></i>话剧歌剧</a></li>
+					<li><a href="#"><i class="af af-qita"></i>其他演出</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 热门推荐 -->
+	<div class=" index-bg mod-tick-hot">
+		<div class="section-inner">
+			<div class="tick-head">
+				<h1>热门推荐</h1>
+			</div>
+			<div class="tick-body">
+				<a href="#" class="body-side">
+					<img class="music-img-scale clearfix"
+						src="http://y.gtimg.cn/music/photo_new/T017M000000nKWCK41n5uL.jpg?max_age=2592000" alt="">
+					<div>
+						<h3>MY BEAUTIFUL LIVE 杨千嬅世界巡回演唱会-苏州站</h3>
+						<p><em>￥380</em> 起 <i class="tick-less"></i></p>
+					</div>
+				</a>
+				<div class="body-cont">
+					<ul class="clearfix">
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 演唱会 -->
+	<div class=" index-bg mod-tick-hot">
+		<div class="section-inner">
+			<div class="tick-head">
+				<h1>演唱会</h1>
+				<a href="#" class="tick-mord hover-textColor">更多<i class="af af-toright"></i></a>
+			</div>
+			<div class="tick-body">
+				<a href="#" class="body-side">
+					<img class="music-img-scale clearfix"
+						src="http://y.gtimg.cn/music/photo_new/T017M000000nKWCK41n5uL.jpg?max_age=2592000" alt="">
+					<div>
+						<h3>MY BEAUTIFUL LIVE 杨千嬅世界巡回演唱会-苏州站</h3>
+						<p><em>￥380</em> 起 <i class="tick-less"></i></p>
+					</div>
+				</a>
+				<div class="body-cont">
+					<ul class="clearfix">
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- LiveHouse -->
+	<div class=" index-bg mod-tick-hot">
+		<div class="section-inner">
+			<div class="tick-head">
+				<h1>LiveHouse</h1>
+				<a href="#" class="tick-mord hover-textColor">更多<i class="af af-toright"></i></a>
+			</div>
+			<div class="tick-body">
+				<a href="#" class="body-side">
+					<img class="music-img-scale clearfix"
+						src="http://y.gtimg.cn/music/photo_new/T017M000000nKWCK41n5uL.jpg?max_age=2592000" alt="">
+					<div>
+						<h3>MY BEAUTIFUL LIVE 杨千嬅世界巡回演唱会-苏州站</h3>
+						<p><em>￥380</em> 起</p>
+					</div>
+				</a>
+				<div class="body-cont">
+					<ul class="clearfix">
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 音乐会 -->
+	<div class=" index-bg mod-tick-hot">
+		<div class="section-inner">
+			<div class="tick-head">
+				<h1>音乐会</h1>
+				<a href="#" class="tick-mord hover-textColor">更多<i class="af af-toright"></i></a>
+			</div>
+			<div class="tick-body">
+				<a href="#" class="body-side">
+					<img class="music-img-scale clearfix"
+						src="http://y.gtimg.cn/music/photo_new/T017M000000nKWCK41n5uL.jpg?max_age=2592000" alt="">
+					<div>
+						<h3>MY BEAUTIFUL LIVE 杨千嬅世界巡回演唱会-苏州站</h3>
+						<p><em>￥380</em> 起 <i class="tick-less"></i></p>
+					</div>
+				</a>
+				<div class="body-cont">
+					<ul class="clearfix">
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cont-left">
+								<img class="music-img-scale"
+									src="http://y.gtimg.cn/music/photo_new/T017M000001rCxee07QKBH.jpg?max_age=2592000"
+									alt="">
+							</a>
+							<a href="#" class="cont-right">
+								<h3>汪苏泷2019“银河漫游”巡回演唱会—武汉站</h3>
+								<p></p>
+								<p>2019.12.21</p>
+								<p>光谷国际网球中心</p>
+								<p>
+									<em>￥ 280</em> 起
+									<i class="tick-less"></i>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部模块 -->
+	<div class="mod-footer">
+		<div class="section-inner">
+			<div class="footer-info clearfix">
+				<div class="download">
+					<h3 class="footer-title">下载QQ音乐客户端</h3>
+					<ul class="footer-content clearfix">
+						<li><a href="#"><i></i>PC版</a></li>
+						<li><a href="#"><i></i>Mac版</a></li>
+						<li><a href="#"><i></i>Android版</a></li>
+						<li><a href="#"><i></i>iPhone版</a></li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3 class="footer-title">特色产品</h3>
+					<ul class="footer-content">
+						<li><a href="#"><i></i>全民K歌</a></li>
+						<li><a href="#"><i></i>Super Sound</a></li>
+						<li><a href="#"><i></i>QPlay</a></li>
+						<li><a href="#">车载互联</a></li>
+						<li><a href="#">QQ演出</a></li>
+					</ul>
+				</div>
+				<div class="link">
+					<h3 class="footer-title">合作链接</h3>
+					<ul class="footer-content">
+						<li><a href="#">CJ ENM</a></li>
+						<li><a href="#">腾讯视频</a></li>
+						<li><a href="#">手机QQ空间</a></li>
+						<li><a href="#">最新版QQ</a></li>
+						<li><a href="#">腾讯社交广告</a></li>
+						<li><a href="#">电脑管家</a></li>
+						<li><a href="#">QQ浏览器</a></li>
+						<li><a href="#">腾讯微云</a></li>
+						<li><a href="#">腾讯云</a></li>
+						<li><a href="#">企鹅FM</a></li>
+						<li><a href="#">智能电视网</a></li>
+						<li><a href="#">当贝市场</a></li>
+					</ul>
+				</div>
+				<div class="platform">
+					<h3 class="footer-title">开放平台</h3>
+					<ul class="footer-content">
+						<li><a href="#">QQ音乐开放平台</a></li>
+						<li><a href="#">腾讯音乐人</a></li>
+					</ul>
+				</div>
+				<div class="group">
+					<h3 class="footer-title">TME集团官网</h3>
+					<ul class="footer-content">
+						<li><a href="#">腾讯音乐</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<ul>
+					<li><a href="#">关于腾讯</a> | </li>
+					<li><a href="#">About Tencent</a> | </li>
+					<li><a href="#">服务条款</a> | </li>
+					<li><a href="#">用户服务协议</a> | </li>
+					<li><a href="#">隐私政策</a> | </li>
+					<li><a href="#">权利声明</a> | </li>
+					<li><a href="#">广告服务</a> | </li>
+					<li><a href="#">腾讯招聘</a> | </li>
+					<li><a href="#">客服中心</a> | </li>
+					<li><a href="#">网站导航</a></li>
+				</ul>
+
+				<p>Copyright © 1998 - 2019 Tencent. <a href="#">All Rights Reserved.</a></p>
+				<p>腾讯公司 <a href="#">版权所有</a> <a href="#">腾讯网络文化经营许可证</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup 弹出层 -->
+	<div class="mod-popup">
+		<!-- 遮罩层 -->
+		<div class="popup-shade" id="popup-shade">
+			<!-- 登录层 -->
+			<div class="popup-login" id="popup-login">
+				<a href="#" class="login-close" onclick="hideLogin()">×</a>
+				<div class="login-head">
+					<a href="#">QQ登录</a>
+					<a href="#">微信登录</a>
+				</div>
+				<div class="login-body">
+					<div class="body-left">
+						<h2>账号密码登录</h2>
+						<p>推荐使用<a href="#">快速安全登录</a>，防止盗号。</p>
+						<input type="text" name="username" class="username" placeholder="支持QQ号/邮箱/手机号登录"
+							autocomplete="off">
+						<input type="password" name="password" class="username" placeholder="密码" autocomplete="off">
+						<input type="submit" value="授权并登录">
+						<ul>
+							<li><a href="#">忘记密码？</a></li>
+							<li>|</li>
+							<li><a href="register.html">注册新账号</a></li>
+							<li>|</li>
+							<li><a href="#">意见反馈</a></li>
+						</ul>
+					</div>
+					<div class="body-right">
+						<p><a href="#">QQ音乐</a> 将获得以下权限</p>
+						<p><input type="checkbox" name="quanxian" checked="checked">全选</p>
+						<p><input type="checkbox" name="quanxian" checked="checked" disabled="disabled">获得您的昵称、头像、性别</p>
+						<div>授权后表明你已同意 <a href="#">QQ登录服务协议</a></div>
+					</div>
+				</div>
+				<div class="login-foot">
+					<a href="#" class="foot-download">下载客户端 体验更多内容</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/popup.js"></script>
+
+
+</body>
+
+</html>

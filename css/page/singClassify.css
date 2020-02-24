@@ -1,0 +1,112 @@
+/* mod-singer-show */
+
+.mod-singer-show {
+    width: 100%;
+    height: 376px;
+    overflow: hidden;
+    background: url(../../img/page/singClassify/bg_singer.jpg) 50% 0 no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.mod-singer-show h4 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 103px;
+}
+
+.mod-singer-show div {
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.mod-singer-show a {
+    display: block;
+    width: 174px;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin: 20px auto 0;
+    transition: border-color .4s;
+}
+
+.mod-singer-show a:hover {
+    border-color: white;
+}
+
+/* main */
+
+.main {
+    margin-bottom: 50px;
+    background-color: #fafafa;
+}
+
+/* singer-nav */
+
+.singer-nav {
+    width: 100%;
+    background-color: #fbfbfd;
+    padding: 34px 0 17px 40px;
+    margin: 30px 0 20px;
+}
+
+.singer-nav a {
+    display: inline-block;
+    padding: 0 8px;
+    margin: 0 12px 14px 0;
+    line-height: 27px;
+}
+
+.singer-nav>div a:first-child {
+    background-color: var(--textColor);
+    color: white;
+    margin-right: 28px;
+}
+
+/* singer-list */
+
+.singer-list {
+    background-color: ;
+}
+
+.list-singer li {
+    float: left;
+    width: 19%;
+    margin: 0 .5% 20px;
+    padding: 25px 0;
+    overflow: hidden;
+    background-color: #fbfbfd;
+    min-height: 195px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.list-singer img {
+    border-radius: 50%;
+}
+
+.list-singer h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 30px 4px;
+}
+
+.list-singer h3 a {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.list-txt ul {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.list-txt li {
+    width: 20%;
+    float: left;
+    line-height: 36px;
+}

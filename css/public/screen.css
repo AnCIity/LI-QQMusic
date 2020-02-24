@@ -1,0 +1,25 @@
+@media screen and (max-width: 1200px) {
+    .section-inner {
+        margin: 0 50px;
+    }
+    .mod-header .top-search {
+        margin-left: 0;
+    }
+    .mod-header .search-input {
+        width: 0px;
+        margin-left: 0;
+    }
+    .mod-header .opt-open-music {
+        display: none;
+    }
+    .mod-footer .download li i {
+        margin: 0 27px 12px;
+    }
+    /* 排行榜 */
+    .rank-nav {
+        width: 150px;
+    }
+    .rank-list {
+        margin-left: 175px;
+    }
+}

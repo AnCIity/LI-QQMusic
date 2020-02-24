@@ -1,0 +1,464 @@
+/* main */
+
+.main {
+    padding-top: 50px;
+}
+
+/* rankList nav */
+
+.rank-nav {
+    float: left;
+    width: 178px;
+    border: 1px solid rgba(153, 153, 153, .2);
+}
+
+.rank-nav ul {
+    width: 100%;
+}
+
+.rank-nav dt {
+    font-size: 20px;
+    line-height: 60px;
+    margin: 0 17px 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.rank-nav dd a {
+    display: block;
+    line-height: 22px;
+    padding: 8px 17px;
+}
+
+.rank-nav dl:first-child dd:nth-child(2) a {
+    color: white;
+    background-color: var(--textColor);
+}
+
+/* rank-list */
+
+.rank-list {
+    margin-left: 210px;
+    margin-bottom: 20px;
+    min-width: 1000px;
+}
+
+/* list-head */
+
+.list-head {
+    height: 64px;
+    line-height: 64px;
+    word-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.list-head h1 {
+    float: left;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+/* list-bar */
+
+.list-bar {
+    margin-bottom: 20px;
+}
+
+.list-bar a {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #c9c9c9;
+    margin-right: 6px;
+    padding: 0 23px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.list-bar a:hover {
+    background-color: #ededed;
+    color: #333;
+}
+
+.list-bar a:first-child {
+    background-color: var(--textColor);
+    border-color: var(--textColor);
+    color: white;
+}
+
+.list-bar a:first-child:hover {
+    background-color: #279c63;
+    border-color: #279c63;
+}
+
+/* list-cont */
+
+.list-cont {
+    width: 100%;
+}
+
+/* cont-header */
+
+.cont-header {
+    position: relative;
+    background-color: rgba(0, 0, 0, .01);
+    color: #999;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 120px;
+    padding-right: 95px;
+}
+
+.cont-header li {
+    float: left;
+}
+
+.cont-header li:nth-child(1) {
+    width: 72%;
+}
+
+.cont-header li:nth-child(2) {
+    width: 25%;
+}
+
+.cont-header li:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88px;
+}
+
+/* cont-body */
+
+.cont-body span {
+    color: #999;
+}
+
+.cont-body>li {
+    position: relative;
+    padding-left: 120px;
+    padding-right: 95px;
+}
+
+.cont-body>li:nth-child(2n) {
+    background-color: #fafafa;
+}
+
+.cont-body>li>div {
+    display: inline-block;
+}
+
+.cont-bd-num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+    font-size: 24px;
+}
+
+.cont-body>li:nth-child(-n+3) .cont-bd-num {
+    color: #ff4222;
+}
+
+.cont-bd-rank {
+    position: absolute;
+    left: 50px;
+    width: 70px;
+    height: 60px;
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cont-bd-rank i {
+    display: block;
+    font-size: 24px;
+}
+
+.cont-bd-songname {
+    width: 72%;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.songname-txt img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.songname-txt>a:not([class=not-select]) {
+    white-space: nowrap;
+    max-width: 40%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+}
+
+/* hover显示歌曲操作 */
+
+.cont-body li:hover .song-oper {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.songname-top {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+}
+
+.song-oper {
+    display: inline-block;
+    line-height: 36px;
+    opacity: 0;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.song-oper i.oper {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url("../../img/page/rankList/icon_list_menu.png") no-repeat 0 0;
+}
+
+.song-oper a:nth-child(2) i.oper {
+    background-position: 0 -80px;
+}
+
+.song-oper a:nth-child(3) i.oper {
+    background-position: 0 -280px;
+}
+
+.song-oper a:nth-child(4) i.oper {
+    background-position: 0 -40px;
+}
+
+.song-oper a:nth-child(1) i.oper:hover {
+    background-position: -40px 0;
+}
+
+.song-oper a:nth-child(2) i.oper:hover {
+    background-position: -40px -80px;
+}
+
+.song-oper a:nth-child(3) i.oper:hover {
+    background-position: -40px -280px;
+}
+
+.song-oper a:nth-child(4) i.oper:hover {
+    background-position: -40px -40px;
+}
+
+.cont-bd-artist {
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.cont-bd-time {
+    width: 88px;
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    color: #999;
+}
+
+/* cont-client */
+
+.cont-client {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.cont-client p {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+
+.cont-client a {
+    display: block;
+    margin: 20px auto 0;
+    width: 175px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 41px;
+    background-color: var(--textColor);
+}
+
+.cont-client a:hover {
+    color: #fff;
+    background-color: #2caf6f;
+}
+
+/* rank-comment */
+
+.rank-comment {}
+
+.comment-head h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+.comment-head h2 span {
+    font-size: 14px;
+    margin-left: 12px;
+    color: #999;
+}
+
+.comment-input {
+    padding-bottom: 60px;
+}
+
+.input-textarea {
+    position: relative;
+    overflow: hidden;
+    height: 102px;
+    border: solid 1px #ececec;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+.textarea-inner {
+    margin: 10px 14px 0 14px;
+}
+
+.inner-cont {
+    width: 100%;
+    border: none;
+    height: 66px;
+    resize: none;
+    overflow: auto;
+    outline: none;
+}
+
+.cont-tip {
+    color: #999;
+    font-size: 12px;
+}
+
+.inner-cont:focus .cont-tip {
+    display: none;
+}
+
+.textarea-num {
+    text-align: right;
+    padding-right: 15px;
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.textarea-num span {
+    color: var(--textColor);
+}
+
+.input-bottom {
+    text-align: right;
+    line-height: 27px;
+    padding-top: 20px;
+}
+
+.input-bottom i {
+    color: var(--textColor);
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.input-bottom a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: var(--textColor);
+    color: white;
+}
+
+.input-bottom a:hover {
+    background-color: #2caf6f;
+    border-color: #2caf6f;
+    color: #fff;
+}
+
+.comment-all {
+    margin-bottom: 46px;
+}
+
+.all-new {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ebebeb;
+    line-height: 50px;
+}
+
+.all-list {
+    margin-bottom: 10px;
+}
+
+.all-list li {
+    position: relative;
+    padding-left: 50px;
+    color: #999;
+    padding: 15px 0 15px 56px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.all-list img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.all-list h4 a {
+    color: #999;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.all-list p {
+    color: #333;
+    line-height: 24px;
+}
+
+.all-list-opt {
+    margin-top: 5px;
+}
+
+.all-list-opt a {
+    float: right;
+    margin: 0 6px;
+    color: #333;
+}
+
+.all-list-opt a span {
+    font-size: 12px;
+}
+
+/* rank-rule */
+
+.rank-rule {
+    text-align: center;
+    font-size: 12px;
+}

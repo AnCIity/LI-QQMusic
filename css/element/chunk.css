@@ -1,0 +1,198 @@
+/* 站点开关站点 */
+
+.side-switch-bg {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #e1e1e1;
+    display: inline-block;
+    margin: 10px;
+}
+
+.side-switch-bg:hover {
+    background: rgba(0, 0, 0, .3);
+}
+
+/* 图片播放特效 */
+
+.music-play-show {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.music-play-show>.mask {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.music-play-show::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/element/cover_play.png") no-repeat center;
+    background-size: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(.5);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.music-play-show:hover>.mask {
+    opacity: 1;
+}
+
+.music-play-show:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.music-play-show img {
+    transition: transform .5s;
+}
+
+.music-play-show:hover img {
+    transform: scale(1.06);
+}
+
+/* 图片缩放特效 */
+
+.music-img-scale {
+    transition: transform .4s;
+}
+
+.music-img-scale:hover {
+    transform: scale(1.07);
+}
+
+/* 徽章 music-badge */
+
+.music-badge {
+    display: inline-block;
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+    border-radius: 2px;
+    line-height: 10px;
+    font-size: 12px;
+    padding: 2px 5px;
+    overflow: hidden;
+}
+
+/* 分页导航 */
+
+.music-paging {
+    text-align: center;
+}
+
+.music-paging a {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+    padding: 0 21px;
+    box-sizing: border-box;
+    min-width: 24px;
+}
+
+.music-paging a:first-child {
+    background-color: var(--textColor);
+    color: white;
+}
+
+.music-paging a:hover {
+    background-color: var(--textColor);
+    color: white;
+}
+
+/* 左右滑动划过效果 */
+
+/* 
+    .mod-slide 为划过触发元素类名
+    在其子级加入：
+    <div class="music-slide">
+        <div class="slide-block left">
+            <a href="#" class="chunk chunk-left"><i class="af af-toleft"></i></a>
+        </div>
+        <div class="slide-block right">
+            <a href="#" class="chunk chunk-right"><i class="af af-toright"></i></a>
+        </div>
+    </div>
+*/
+
+.mod-slide {
+    position: relative;
+}
+
+.mod-slide:hover .slide-block>.chunk-left {
+    left: 0;
+}
+
+.mod-slide:hover .slide-block>.chunk-right {
+    right: 0;
+}
+
+.music-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.slide-block {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.slide-block.right {
+    right: 0;
+}
+
+.slide-block>.chunk {
+    display: block;
+    width: 70px;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    background: rgba(0, 0, 0, .05);
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    transition: all .5s;
+    pointer-events: all;
+}
+
+.slide-block>.chunk:hover {
+    background: rgba(0, 0, 0, .1);
+}
+
+.chunk.chunk-left {
+    left: -70px;
+}
+
+.chunk.chunk-right {
+    right: -70px;
+}
+
+.slide-block>.chunk i {
+    font-size: 38px;
+}
